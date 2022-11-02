@@ -2,4 +2,4 @@
 
 New message has to be added from colaborator B
 
-This is a new installation Setup Branch
+This is a new installation Setup Branch.

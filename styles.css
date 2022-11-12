@@ -106,16 +106,395 @@
     object-position: center;
 }
 .we__offer_content{
-    padding: 10px;
+    padding: 10px 17px;
 }
 .we__offer_content h2{
     font-size: 20px;
-    font-weight: 500; 
+    font-weight: 400; 
 }
 .we__offer_content p{
     font-size: 18px;
-    /* font-weight: 400;  */
+    font-weight: 300; 
 }
+
+
+/* collectons container */
+.collections h1{
+    margin-left: 14%;
+    font-size: 30px;
+    font-weight: 500;
+    
+    
+}
+.collections .sub__heading_container{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-left: 13%;
+    font-weight: 200;
+
+}
+.sub__heading_container span:nth-child(2){
+    color: rgb(218, 100, 120);
+    cursor: pointer;
+    font-size: 15px;
+    padding-right: 15.5%;
+}
+.collections__card_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+.collections__card_container .card{
+    height: 320px;
+    min-width: 263px;
+    background-size: cover;
+    background-position:center;
+    border-radius:10px;
+    position: relative;
+}
+.card1{
+    background-image: url(./img/collection1.webp);
+}
+.card2{
+    background-image: url(./img/collection4.jpg);
+}
+.card3{
+    background-image: url(./img/collection3.jpg);
+}
+.card4{
+    background-image: url(./img/collection5.avif);
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    /* 0deg =bottom  90deg==left 180deg==top 270deg==right 360deg==whole circle  is black */
+    background-image: linear-gradient(
+        0deg,     
+        rgb(0,0,0,0.9) 0%,
+        rgb(0,0,0,0.08) 50%,
+        rgb(0,0,0,0.05) 85%
+        );
+}
+.collections__card_container .card .content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 12px 16px;
+    font-size: 0.8rem;
+}
+.content h4{
+    font-weight: 500;
+    word-spacing: 0.3rem;
+}
+
+/* Get the Zomato app section */
+.get__the_app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 251, 247);
+    padding: 3rem 6rem;
+}
+.get__the_app .semiContainer{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.get__the_app .semiContainer .left{
+    flex: 2;
+}
+.get__the_app .semiContainer .left img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.get__the_app .semiContainer .right{
+    flex: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.get__the_app .semiContainer .right h1{
+    font-weight: 400;
+    font-size: 2rem;
+}
+.get__the_app .semiContainer .right p{
+    font-size: 1rem;
+    font-weight: 300;
+}
+.get__the_app .semiContainer .right .radio__button_conatiner{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.right .radio__button_conatiner div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+} 
+.right .radio__button_conatiner div input{
+    height: 20px;
+    width: 20px;
+    accent-color: rgb(233, 84, 84)
+}
+.right .radio__button_conatiner div label{
+    font-size: 20px;
+    font-weight: 200;
+}
+.semiContainer .right .input__container{
+    display: flex;
+    gap: 0.5rem;
+
+}
+.input__container{
+    flex-wrap: wrap;
+}
+.input__container button,.input__container input{
+    padding: 10px 12px;
+}
+.input__container input{
+    flex: auto;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    outline: none;
+}
+.input__container button{
+    border: none;
+    background-color: rgb(233, 84, 84);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(216, 77, 77);
+}
+.semiContainer .download__app_container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+.semiContainer .download__app_container h5{
+    font-weight: 300;
+    color: grey;
+}
+.semiContainer .download__app_container div{
+    display: flex;
+    gap: 1rem;
+}
+.download__app_container div img{
+    width: 135px;
+}
+
+/* Explore container */
+.Explore{
+    width: 100%;
+}
+.Explore__container{
+    margin: 3rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1rem;
+}
+.Explore__container div h1{
+    font-weight: 400;
+    font-size: 2rem;
+}
+.Explore__container .semi_block{ 
+       width: 70%;
+       border: 1px solid rgb(215, 211, 211);
+       padding: 1.2%;
+       margin-bottom: 0.5rem;
+       border-radius: 6px;
+       cursor: pointer;
+
+
+}
+.Explore__container .semi_block div{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+
+
+/* Footer container */
+.footer{
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+}
+.footer_section{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+    gap: 1.5rem;
+}
+.footer_section img{
+    width: 140px;
+}
+
+.section1__button_container{
+    display: flex;
+    gap: 1.3rem;
+}
+.section1__button_container button{
+    padding: 5px;
+    width: 90px;
+    background-color: transparent;
+    border: 1px solid #d2c8c8;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.navigation_container{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+                       /* or */
+    grid-template-columns: repeat(5 ,1fr);
+    gap: 1rem;;
+    width: 90%;
+    margin: auto;
+    padding: 3rem;
+}
+.link_container{
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+}
+.link_container h5{
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.footer_link{
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(105, 105, 105);
+    font-size: 1rem;
+}
+.footer_link:hover{
+    color: black;
+}
+.social__link_container button{
+    background: black;
+    width: 22px;
+    height: 22px;
+    border: none;
+    border-radius: 30px;
+    
+}
+.social__link_container button i{
+    color: white;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.footer__section_logos{
+    width: 60%;
+}
+.border_top{
+    border-top: 1px solid rgb(207, 207, 207);
+    padding-bottom: 1.5rem;
+}
+.disclaimer{
+    width: 90%;
+    margin: auto;
+    color: rgb(79, 79, 79);
+    font-size: 13px;
+    border: 1.5rem;
+    padding: 3rem;
+    font-weight: 300;
+    padding-bottom: 1.5rem;
+}
+
+@media only screen and (max-width:900px){
+    .navigation_container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media only screen and (max-width:600px){
+    .navigation_container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media only screen and (max-width:300px){
+    .navigation_container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+
+
+/* for export containair */
+@media only screen and (max-width:400px){
+    .Explore__container div h1{
+        font-size: 1.5rem;
+        background-color: aqua;
+    }
+}
+
+
+/* get_the_app container */
+
+@media only screen and (max-width:1500px){
+    .get__the_app .semiContainer .left,.get__the_app .semiContainer .right{
+        flex: 1;
+    }
+    .get__the_app .semiContainer{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:900px){
+    .get__the_app{
+        padding: 2rem;
+    }
+    .get__the_app .semiContainer{
+        width: 90%;
+    }
+}
+@media only screen and (max-width:700px){
+    .get__the_app{
+        padding: 3rem;
+    }
+    .get__the_app .semiContainer{
+        width: 90%;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
 
 
 
